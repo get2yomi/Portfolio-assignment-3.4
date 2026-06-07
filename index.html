@@ -530,7 +530,7 @@ footer a{color:var(--blue-400);text-decoration:none}
       <a href="#contact" class="btn btn-s">Get in Touch</a>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-n">5<span>+</span></div><div class="stat-l">Portfolio artifacts</div></div>
+      <div><div class="stat-n">6<span>+</span></div><div class="stat-l">Portfolio artifacts</div></div>
       <div><div class="stat-n">10<span>+</span></div><div class="stat-l">Algorithms mapped</div></div>
       <div><div class="stat-n">4<span>+</span></div><div class="stat-l">AI/ML domains</div></div>
     </div>
@@ -610,7 +610,7 @@ footer a{color:var(--blue-400);text-decoration:none}
 <!-- ── ARTIFACTS ── -->
 <section id="artifacts">
   <div class="s-label">Portfolio artifacts</div>
-  <h2 class="s-title">Five artifacts that <em>define my work</em></h2>
+  <h2 class="s-title">Six artifacts that <em>define my work</em></h2>
   <p class="s-sub">Each entry follows the standard artifact template: title, introduction, description, objective, process, tools, and value proposition.</p>
 
   <div class="artifacts-nav reveal">
@@ -620,6 +620,7 @@ footer a{color:var(--blue-400);text-decoration:none}
     <button class="art-tab" onclick="showArt(3,this)">4 · Sentiment Analysis Pipeline</button>
     <button class="art-tab" onclick="showArt(4,this)">5 · Generative AI Exploration</button>
     <button class="art-tab" onclick="showArt(5,this)">W3 · Training Approaches</button>
+    <button class="art-tab" onclick="showArt(6,this)">W4 · Explainable AI &amp; LLMs</button>
   </div>
 
   <!-- ARTIFACT 1 -->
@@ -1789,6 +1790,257 @@ footer a{color:var(--blue-400);text-decoration:none}
             <div class="vp-item">
               <h5>Relevance</h5>
               <p>Parameter tuning and architecture design are daily tasks for ML engineers. The ability to systematically vary configurations, observe loss dynamics, and interpret underfitting vs. overfitting signals is a foundational competency that directly maps to professional model development with TensorFlow, PyTorch, or any modern framework.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTIFACT: WORKSHOP 4 — EXPLAINABLE AI & LLMs -->
+  <div class="artifact-panel" id="art-6">
+    <div class="art-card reveal">
+      <div class="art-header">
+        <div class="art-thumb" style="background:#EEF2FF">🔍</div>
+        <div class="art-header-text">
+          <div class="art-number">Workshop 4</div>
+          <div class="art-title">4.4 Explainable AI &amp; Large Language Models</div>
+          <div class="art-intro">A visual reference and explanatory document mapping the landscape of Explainable AI (XAI) for LLMs — covering the core definition, the structural challenges that make billion-parameter models hard to interpret, the metrics used to validate model trustworthiness, and the current techniques and industry efforts working to close the transparency gap.</div>
+        </div>
+      </div>
+      <div class="art-badges">
+        <span class="a-badge" style="background:#EEF2FF;color:#4338CA">Explainable AI</span>
+        <span class="a-badge" style="background:#FEE2E2;color:#991B1B">LLM Interpretability</span>
+        <span class="a-badge" style="background:#FEF3C7;color:#92400E">AI Ethics &amp; Policy</span>
+        <span class="a-badge" style="background:#D1FAE5;color:#065F46">Mechanistic Interpretability</span>
+        <span class="a-badge" style="background:#EFF6FF;color:#1D4ED8">Model Evaluation</span>
+        <span class="a-badge" style="background:#FDF4FF;color:#7E22CE">Regulatory Compliance</span>
+      </div>
+      <div class="art-body">
+
+        <div class="art-section">
+          <h4>Description</h4>
+          <p>A one-page visual reference plus written explanatory document that maps Explainable AI (XAI) across four interconnected dimensions: what it is and why it matters, the structural challenges that make large language models opaque, the metrics researchers use to validate model reliability and safety, and the current techniques — from attention visualization to mechanistic interpretability — being developed to close the gap.</p>
+        </div>
+        <div class="art-section">
+          <h4>Objective</h4>
+          <p>To build a clear, evidence-grounded understanding of why state-of-the-art LLMs (GPT, Claude, Gemini, LLaMA) remain difficult to interpret despite their capabilities, and to survey the validation metrics, interpretability methods, and governance tools the field is using to build trust, reliability, and accountability into deployed AI systems.</p>
+        </div>
+        <div class="art-section">
+          <h4>Process</h4>
+          <ul>
+            <li>Researched the definition of XAI and why transparency matters for trust, accountability, and safety in high-stakes domains (healthcare, law, finance, hiring)</li>
+            <li>Identified six structural challenges that make LLMs hard to explain — from black-box opacity to dynamic internal state</li>
+            <li>Surveyed accuracy/benchmark metrics (MMLU, TruthfulQA, HumanEval) and safety/alignment metrics (red-teaming, bias audits, RLHF scoring) used to validate models independent of their ability to explain themselves</li>
+            <li>Catalogued current interpretability techniques and governance tools — attention visualization, probing classifiers, chain-of-thought prompting, circuit analysis, model cards, RLHF &amp; Constitutional AI</li>
+            <li>Mapped which industry leaders (Anthropic, Google DeepMind, Meta AI, OpenAI, Hugging Face, IBM) are active in each area of XAI research</li>
+            <li>Synthesized the findings into a one-page visual reference graphic and a written explanatory document summarizing the core tension, key considerations, and design rationale</li>
+          </ul>
+        </div>
+        <div class="art-section">
+          <h4>Tools &amp; Technologies</h4>
+          <div class="art-tools">
+            <span class="tool-chip">BertViz</span>
+            <span class="tool-chip">TransformerLens</span>
+            <span class="tool-chip">Hugging Face Leaderboards</span>
+            <span class="tool-chip">Constitutional AI</span>
+            <span class="tool-chip">Indiana Wesleyan University</span>
+          </div>
+        </div>
+
+        <!-- ── SECTION 1: WHAT IS XAI ── -->
+        <div class="art-section full">
+          <h4>1 · What Is Explainable AI?</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:1.2rem">
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid var(--blue-400)">
+              <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">Definition</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.65"><strong>Explainable AI (XAI)</strong> — a set of methods and processes that allow humans to understand, trust, and appropriately oversee the outputs of AI systems, including <em>why</em> a model produced a given result, not just what the result was.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #059669">
+              <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">Why It Matters</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.65"><strong>Trust, accountability, safety</strong> — as LLMs are deployed in healthcare, law, finance, and hiring, understanding their reasoning is critical for catching errors, auditing decisions, and meeting regulatory requirements.</p>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px">
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem;text-align:center">
+              <div style="font-size:10px;color:var(--slate-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Parameters (GPT-4 est.)</div>
+              <div style="font-size:16px;font-weight:700;color:var(--slate-800)">~1 Trillion</div>
+              <div style="font-size:10.5px;color:var(--slate-400);margin-top:.2rem">non-linear interactions</div>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem;text-align:center">
+              <div style="font-size:10px;color:var(--slate-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Key AI models</div>
+              <div style="font-size:14px;font-weight:700;color:var(--slate-800)">GPT · Claude · Gemini · LLaMA</div>
+              <div style="font-size:10.5px;color:var(--slate-400);margin-top:.2rem">share opacity challenges</div>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem;text-align:center">
+              <div style="font-size:10px;color:var(--slate-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">XAI maturity</div>
+              <div style="font-size:16px;font-weight:700;color:var(--slate-800)">Emerging</div>
+              <div style="font-size:10.5px;color:var(--slate-400);margin-top:.2rem">no single solution exists yet</div>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem;text-align:center">
+              <div style="font-size:10px;color:var(--slate-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Regulatory push</div>
+              <div style="font-size:16px;font-weight:700;color:var(--slate-800)">EU AI Act</div>
+              <div style="font-size:10.5px;color:var(--slate-400);margin-top:.2rem">mandates explainability for high-risk AI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 2: KEY CHALLENGES ── -->
+        <div class="art-section full">
+          <h4>2 · Key Challenges in Explainability</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px">
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #dc2626">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">? Black-box opacity</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Decisions emerge from billions of parameters with no single interpretable component — the model's reasoning is distributed and invisible across the network.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #d97706">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">! Post-hoc gap</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Explanations are generated after the decision and may not faithfully reflect the model's actual internal process — they can be plausible but misleading.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #7c3aed">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem"># Data quality &amp; bias</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Opaque training data introduces biases that are difficult to detect or trace, compounding the difficulty of interpreting model outputs fairly.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid var(--blue-400)">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">~ Scale &amp; non-linearity</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Non-linear interactions across layers resist straightforward interpretation — complexity grows as models become larger and more capable.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #059669">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">§ Regulatory pressure</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Compliance frameworks like the EU AI Act demand documentation and auditability that current LLM architectures are not natively designed to provide.</p>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid var(--slate-400)">
+              <h5 style="font-size:12.5px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">≈ Dynamic internal state</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Model weights are static but contextual attention shifts with every input — making consistent explanation across sessions difficult to achieve.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 3: VALIDATION & PERFORMANCE METRICS ── -->
+        <div class="art-section full">
+          <h4>3 · Validation &amp; Performance Metrics</h4>
+          <p style="font-size:13px;color:var(--slate-500);line-height:1.6;margin-bottom:1rem">These are the tools researchers and deployers use to assess whether a model is reliable, safe, and accountable — independent of whether it can explain itself.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:1.2rem">
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid var(--blue-400)">
+              <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">Accuracy &amp; Benchmark Metrics</h5>
+              <ul style="margin:0 0 0 1rem;font-size:12px;color:var(--slate-500);line-height:1.7">
+                <li><strong>MMLU</strong> — knowledge breadth</li>
+                <li><strong>HellaSwag</strong> — commonsense reasoning</li>
+                <li><strong>TruthfulQA</strong> — factual accuracy</li>
+                <li><strong>HumanEval</strong> — code generation</li>
+                <li><strong>BLEU / ROUGE</strong> — text generation quality</li>
+                <li><strong>F1, precision, recall</strong> — classification</li>
+              </ul>
+            </div>
+            <div style="background:var(--white);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem;border-left:3px solid #dc2626">
+              <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em">Safety &amp; Alignment Metrics</h5>
+              <ul style="margin:0 0 0 1rem;font-size:12px;color:var(--slate-500);line-height:1.7">
+                <li>Red-teaming pass rate</li>
+                <li>Refusal accuracy on harmful prompts</li>
+                <li>Bias audits (BBQ, WinoBias)</li>
+                <li>Constitutional AI evaluations</li>
+                <li>RLHF reward model scoring</li>
+                <li>Calibration — Expected Calibration Error (ECE)</li>
+              </ul>
+            </div>
+          </div>
+          <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.05em">How Metrics Build Trust → Reliability → Accountability</h5>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px">
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem"><div style="font-size:10px;font-weight:700;color:var(--blue-700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem">Step 1</div><div style="font-size:12px;color:var(--slate-600);line-height:1.5">Benchmark on held-out test sets</div></div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem"><div style="font-size:10px;font-weight:700;color:var(--blue-700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem">Step 2</div><div style="font-size:12px;color:var(--slate-600);line-height:1.5">Human evaluation &amp; red-teaming</div></div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem"><div style="font-size:10px;font-weight:700;color:var(--blue-700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem">Step 3</div><div style="font-size:12px;color:var(--slate-600);line-height:1.5">Ongoing monitoring in deployment</div></div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:8px;padding:.85rem 1rem"><div style="font-size:10px;font-weight:700;color:var(--blue-700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem">Step 4</div><div style="font-size:12px;color:var(--slate-600);line-height:1.5">Audit trail &amp; model cards published</div></div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 4: CURRENT SOLUTIONS & TECHNIQUES ── -->
+        <div class="art-section full">
+          <h4>4 · Current Solutions &amp; Techniques</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-bottom:1.2rem">
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:var(--blue-700);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Interpretability method</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">Attention visualization</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Heatmaps and saliency maps show which tokens an attention head focuses on. Tools like BertViz and TransformerLens expose multi-head attention patterns — a window into <em>what</em> the model attends to, even if not <em>why</em>.</p>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Interpretability method</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">Probing classifiers</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Lightweight classifiers trained on hidden states reveal what linguistic or factual knowledge is encoded in specific layers — mapping internal representations to human-readable concepts.</p>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:#7E22CE;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Prompting technique</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">Chain-of-thought prompting</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Encouraging the model to think step by step externalizes intermediate reasoning, making it easier to audit logic, catch errors early, and improve factual consistency on multi-step tasks.</p>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:#991B1B;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Mechanistic interpretability</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">Circuit analysis (Anthropic)</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Anthropic's research identifies <em>circuits</em> — subgraphs of attention heads and MLP neurons — that implement specific behaviors such as indirect object identification or factual recall.</p>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:#92400E;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Policy &amp; governance</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">Model cards &amp; system cards</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Standardized documentation (pioneered by Google, adopted by Meta and Anthropic) describes intended use, known limitations, bias evaluations, and training data provenance.</p>
+            </div>
+            <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.1rem">
+              <div style="font-size:10px;font-weight:700;color:#1D4ED8;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.3rem">Alignment research</div>
+              <h5 style="font-size:13px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem">RLHF &amp; Constitutional AI</h5>
+              <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Reinforcement learning from human feedback shapes model behavior toward human preferences. Constitutional AI introduces principles the model uses to self-critique, reducing reliance on opaque fine-tuning signals.</p>
+            </div>
+          </div>
+
+          <h5 style="font-size:12px;font-weight:700;color:var(--slate-800);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.05em">Industry Leaders Active in XAI Research</h5>
+          <table style="width:100%;border-collapse:collapse;font-size:12px;border-radius:8px;overflow:hidden;border:1px solid var(--slate-200)">
+            <tbody>
+              <tr>
+                <td style="padding:.65rem .9rem;border-bottom:1px solid var(--slate-100);border-right:1px solid var(--slate-100);color:var(--slate-600)"><strong style="color:var(--slate-800)">Anthropic</strong> — mechanistic interpretability, Constitutional AI</td>
+                <td style="padding:.65rem .9rem;border-bottom:1px solid var(--slate-100);border-right:1px solid var(--slate-100);color:var(--slate-600);background:var(--slate-50)"><strong style="color:var(--slate-800)">Google DeepMind</strong> — Gemini eval suites, TCAV probing</td>
+                <td style="padding:.65rem .9rem;border-bottom:1px solid var(--slate-100);color:var(--slate-600)"><strong style="color:var(--slate-800)">Meta AI</strong> — LLaMA model cards, OPT transparency reports</td>
+              </tr>
+              <tr>
+                <td style="padding:.65rem .9rem;border-right:1px solid var(--slate-100);color:var(--slate-600)"><strong style="color:var(--slate-800)">OpenAI</strong> — GPT-4 system card, scalable oversight</td>
+                <td style="padding:.65rem .9rem;border-right:1px solid var(--slate-100);color:var(--slate-600);background:var(--slate-50)"><strong style="color:var(--slate-800)">Hugging Face</strong> — open evaluation leaderboards</td>
+                <td style="padding:.65rem .9rem;color:var(--slate-600)"><strong style="color:var(--slate-800)">IBM</strong> — AI Fairness 360, AI Explainability 360</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ── SECTION 5: EXPLANATORY DOCUMENT ── -->
+        <div class="art-section full">
+          <h4>5 · Explanatory Document</h4>
+          <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:10px;padding:1.3rem 1.5rem">
+            <p style="font-size:13px;color:var(--slate-600);line-height:1.8;margin-bottom:1rem">The graphic above maps the landscape of Explainable AI (XAI) across four interconnected dimensions. At its core is a fundamental tension: large language models like GPT-4, Claude, Gemini, and LLaMA derive their remarkable capabilities from scale — billions of parameters interacting in non-linear, distributed ways — yet that same scale is precisely what makes their decision-making so difficult to interpret. One of the quieter problems in AI transparency is that explanations generated after the fact can sound convincing without actually reflecting what the model did internally, a gap researchers call the <em>post-hoc problem</em>. On top of that, training data is often opaque enough that the biases baked into it are genuinely difficult to trace back to their source. Add regulations like the EU AI Act pushing organizations to audit systems that were never built with auditability in mind, and the challenge becomes structural — these are not early-stage growing pains that will sort themselves out as models improve; they are fundamental properties of how neural networks work, and scaling up is unlikely to make them easier to solve.</p>
+            <p style="font-size:13px;color:var(--slate-600);line-height:1.8;margin-bottom:1rem">On the response side, the field hasn't been static. Researchers can see at least a portion of what a model is encoding thanks to attention visualization and probing classifiers. Because chain-of-thought prompting highlights intermediate reasoning, mistakes can be identified before they become more serious. Mechanistic interpretability goes deeper still — trying to identify the specific neuron circuits behind particular behaviors, essentially reverse-engineering the model from the inside out. On the process side, tools like model cards, Constitutional AI, and RLHF build accountability into how models get deployed and fine-tuned. Red-teaming and bias audits, along with benchmark suites like MMLU and TruthfulQA, provide an empirical basis for the entire endeavor.</p>
+            <p style="font-size:13px;color:var(--slate-600);line-height:1.8;margin-bottom:1.1rem">The honest assessment is that this is a serious, multi-front research initiative making significant progress against a truly difficult problem — even though none of it adds up to complete openness just yet.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+              <div style="background:var(--white);border:1px solid var(--slate-200);border-left:3px solid var(--blue-400);border-radius:8px;padding:.9rem 1.1rem">
+                <h5 style="font-size:11px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em">Key consideration</h5>
+                <p style="font-size:12px;color:var(--slate-500);line-height:1.6">Scale is both the source of LLM capability and the source of its opacity — these two properties cannot be cleanly separated.</p>
+              </div>
+              <div style="background:var(--white);border:1px solid var(--slate-200);border-left:3px solid #059669;border-radius:8px;padding:.9rem 1.1rem">
+                <h5 style="font-size:11px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em">Design rationale</h5>
+                <p style="font-size:12px;color:var(--slate-500);line-height:1.6">The graphic groups challenges, metrics, and solutions into parallel visual blocks so a reader can map each problem directly to the techniques addressing it.</p>
+              </div>
+              <div style="background:var(--white);border:1px solid var(--slate-200);border-left:3px solid #d97706;border-radius:8px;padding:.9rem 1.1rem">
+                <h5 style="font-size:11px;font-weight:700;color:var(--slate-800);margin-bottom:.35rem;text-transform:uppercase;letter-spacing:.05em">Main takeaway</h5>
+                <p style="font-size:12px;color:var(--slate-500);line-height:1.6">XAI is an active, multi-front research effort — real progress exists, but no single technique delivers full transparency yet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vp-section">
+          <h4>Value Proposition</h4>
+          <div class="vp-inner-grid">
+            <div class="vp-item">
+              <h5>Unique value</h5>
+              <p>This artifact demonstrates the ability to take a genuinely difficult, fast-moving research area and distill it into a structured, audience-ready visual reference — connecting the technical (circuit analysis, probing classifiers) to the organizational (model cards, regulatory compliance) without losing rigor.</p>
+            </div>
+            <div class="vp-item">
+              <h5>Relevance</h5>
+              <p>Explainability is becoming a hard requirement, not a nice-to-have — the EU AI Act and similar frameworks now mandate it for high-risk systems. Understanding the interpretability toolkit and validation pipeline is directly relevant to any ML role that touches deployment, auditing, or responsible AI practice.</p>
             </div>
           </div>
         </div>
